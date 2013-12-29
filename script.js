@@ -7,7 +7,11 @@ var color = [
 	'#B0D274',
 	'#BFBEDF',
 	'#A9D9F5',
-	'#EEEEEE'
+	'#EEEEEE',
+	'#EEEEEE',
+	'#F9E091',
+	'#F9E091',
+	'#E9ABF4'
 ];
 
 // Randomize numbers with min and max
@@ -27,7 +31,7 @@ function shadeColor(color, percent) {
 }
 
 // Loop to create Fireworks randomly
-for (var i = 0; i < 1000; i++) {
+for (var i = 0; i < 100; i++) {
 
 	var randomTime = random(1000, 40000);
 
@@ -35,8 +39,9 @@ for (var i = 0; i < 1000; i++) {
 
 		var fireworkDimension = random(60, 300);
 		var fireworkTop = random(0, 60);
-		var fireworkLeft = random(20, 80);
+		var fireworkLeft = random(0, 80);
 		var fireworkColor = color[random(0, color.length)];
+		var fireworkZ = random(100, 300);
 
 		var firework = document.createElement("div");
 		firework.classList.add('firework');
@@ -46,6 +51,7 @@ for (var i = 0; i < 1000; i++) {
 		firework.style.left = fireworkLeft + '%';
 		firework.style.backgroundImage = 'radial-gradient('+ fireworkColor +', '+ shadeColor(fireworkColor, 10) +')';
 		firework.style.boxShadow = '0 0 ' + (fireworkDimension / 2) + 'px ' + fireworkColor;
+		firework.style.zIndex = fireworkZ + '';
 		sky.appendChild(firework);
 
 	}, randomTime)

@@ -27,10 +27,11 @@ body {
   position: absolute;
   display: block;
   width: 300px;
-  top: 30%;
+  top: 20%;
   left: 50%;
   margin-left: -150px;
   text-align: center;
+  z-index: 300;
 }
 
 .message h1 {
@@ -42,6 +43,52 @@ body {
   letter-spacing: 20px;
 }
 
+.city {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background: url(../images/city.png);
+}
+
+.cloud_one {
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 20%;
+  -webkit-animation: cloud_to_right 90s linear;
+  z-index: 200;
+}
+
+.cloud_two {
+  position: absolute;
+  display: block;
+  top: 20%;
+  left: 70%;
+  -webkit-animation: cloud_to_left 90s linear;
+  z-index: 200;
+}
+
+.cloud_three {
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 30%;
+  -webkit-animation: cloud_to_right 120s linear;
+  z-index: 200;
+}
+
+.cloud_four {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 80%;
+  -webkit-animation: cloud_to_left 60s linear;
+  z-index: 200;
+}
+
 @-webkit-keyframes explosion {
   0% {
     opacity: .8;
@@ -49,5 +96,25 @@ body {
 
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes cloud_to_right {
+  0% {
+    /*left: 20%;*/
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes cloud_to_left {
+  0% {
+    /*left: 70%;*/
+  }
+
+  100% {
+    left: -400px;
   }
 }
