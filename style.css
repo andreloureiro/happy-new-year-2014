@@ -51,42 +51,40 @@ body {
   height: 60px;
   width: 100%;
   background: url(../images/city.png);
+  z-index: 300;
 }
 
-.cloud_one {
+.cloud {
   position: absolute;
   display: block;
+}
+.cloud.one {
   top: 25%;
   left: 20%;
   -webkit-animation: cloud_to_right 90s linear;
-  z-index: 200;
+  z-index: 100;
+  opacity: .4;
 }
-
-.cloud_two {
-  position: absolute;
-  display: block;
+.cloud.two {
   top: 20%;
   left: 70%;
   -webkit-animation: cloud_to_left 90s linear;
-  z-index: 200;
+  z-index: 150;
+  opacity: .6;
 }
-
-.cloud_three {
-  position: absolute;
-  display: block;
+.cloud.three {
   top: 40%;
   left: 30%;
   -webkit-animation: cloud_to_right 120s linear;
   z-index: 200;
+  opacity: .8;
 }
-
-.cloud_four {
-  position: absolute;
-  display: block;
+.cloud.four {
   top: 50%;
   left: 80%;
   -webkit-animation: cloud_to_left 60s linear;
-  z-index: 200;
+  z-index: 250;
+  opacity: .2;
 }
 
 @-webkit-keyframes explosion {
