@@ -53,6 +53,7 @@ for (var i = 0; i < 100; i++) {
 		firework.style.backgroundImage = 'radial-gradient('+ fireworkColor +', '+ shadeColor(fireworkColor, 10) +')';
 		firework.style.boxShadow = '0 0 ' + (fireworkDimension / 2) + 'px ' + fireworkColor;
 		firework.style.zIndex = fireworkZ + '';
+		firework.style.animation = fireworkAnimationTime + 's explosion ease-out';
 		firework.style.webkitAnimation = fireworkAnimationTime + 's explosion ease-out';
 		sky.appendChild(firework);
 
