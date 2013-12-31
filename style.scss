@@ -21,6 +21,8 @@ body {
 	display: block;
 	border-radius: 50%;
 	opacity: 0;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
 }
 
 .message {
