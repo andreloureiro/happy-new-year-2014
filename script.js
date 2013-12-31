@@ -41,6 +41,7 @@ for (var i = 0; i < 100; i++) {
 		var fireworkTop = random(0, 60);
 		var fireworkLeft = random(0, 80);
 		var fireworkColor = color[random(0, color.length)];
+		var fireworkAnimationTime = random(1, 4);
 		var fireworkZ = random(100, 300);
 
 		var firework = document.createElement("div");
@@ -52,6 +53,7 @@ for (var i = 0; i < 100; i++) {
 		firework.style.backgroundImage = 'radial-gradient('+ fireworkColor +', '+ shadeColor(fireworkColor, 10) +')';
 		firework.style.boxShadow = '0 0 ' + (fireworkDimension / 2) + 'px ' + fireworkColor;
 		firework.style.zIndex = fireworkZ + '';
+		firework.style.webkitAnimation = fireworkAnimationTime + 's explosion ease-out';
 		sky.appendChild(firework);
 
 	}, randomTime)

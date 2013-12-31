@@ -12,7 +12,7 @@ body {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background-image: linear-gradient(#001C2D, #103851);
+	background-image: linear-gradient(#000000, #1E0019, #22001D);
 	overflow: hidden;
 }
 
@@ -20,7 +20,6 @@ body {
 	position: absolute;
 	display: block;
 	border-radius: 50%;
-	-webkit-animation: 1s explosion linear;
 	opacity: 0;
 }
 
@@ -61,7 +60,7 @@ body {
 
 	&.one {
 		top: 25%;
-		left: 20%;
+		left: 10%;
 		-webkit-animation: cloud_to_right 90s linear;
 		z-index: 100;
 		opacity: .4;
@@ -89,6 +88,46 @@ body {
 		-webkit-animation: cloud_to_left 60s linear;
 		z-index: 250;
 		opacity: .2;
+	}
+
+	&.five {
+		top: 60%;
+		left: 105%;
+		-webkit-animation: cloud_to_left 50s linear;
+		z-index: 200;
+		opacity: .8;
+	}
+
+	&.six {
+		top: 45%;
+		left: 0%;
+		-webkit-animation: cloud_to_right 80s linear;
+		z-index: 150;
+		opacity: .7;
+	}
+
+	&.seven {
+		top: 30%;
+		left: 95%;
+		-webkit-animation: cloud_to_left 80s linear;
+		z-index: 200;
+		opacity: .8;
+	}
+
+	&.eight {
+		top: 55%;
+		left: 5%;
+		-webkit-animation: cloud_to_right 45s linear;
+		z-index: 250;
+		opacity: .6;
+	}
+
+	&.nine {
+		top: 65%;
+		left: 85%;
+		-webkit-animation: cloud_to_left 45s linear;
+		z-index: 200;
+		opacity: .7;
 	}
 }
 
