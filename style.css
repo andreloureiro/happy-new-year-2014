@@ -74,64 +74,100 @@ body {
   top: 25%;
   left: 10%;
   animation: cloud_to_right 90s linear;
+  -webkit-animation: cloud_to_right 90s linear;
+  -moz-animation: cloud_to_right 90s linear;
   z-index: 100;
   opacity: .4;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .cloud.two {
   top: 20%;
   left: 70%;
   animation: cloud_to_left 90s linear;
+  -webkit-animation: cloud_to_left 90s linear;
+  -moz-animation: cloud_to_left 90s linear;
   z-index: 150;
   opacity: .6;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .cloud.three {
   top: 40%;
   left: 30%;
   animation: cloud_to_right 120s linear;
+  -webkit-animation: cloud_to_right 120s linear;
+  -moz-animation: cloud_to_right 120s linear;
   z-index: 200;
   opacity: .8;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .cloud.four {
   top: 50%;
   left: 80%;
   animation: cloud_to_left 60s linear;
+  -webkit-animation: cloud_to_left 60s linear;
+  -moz-animation: cloud_to_left 60s linear;
   z-index: 250;
   opacity: .2;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .cloud.five {
   top: 60%;
   left: 105%;
   animation: cloud_to_left 50s linear;
+  -webkit-animation: cloud_to_left 50s linear;
+  -moz-animation: cloud_to_left 50s linear;
   z-index: 200;
   opacity: .8;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .cloud.six {
   top: 45%;
   left: 0%;
   animation: cloud_to_right 80s linear;
+  -webkit-animation: cloud_to_right 80s linear;
+  -moz-animation: cloud_to_right 80s linear;
   z-index: 150;
   opacity: .7;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .cloud.seven {
   top: 30%;
   left: 95%;
   animation: cloud_to_left 80s linear;
+  -webkit-animation: cloud_to_left 80s linear;
+  -moz-animation: cloud_to_left 80s linear;
   z-index: 200;
   opacity: .8;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .cloud.eight {
   top: 55%;
   left: 5%;
   animation: cloud_to_right 45s linear;
+  -webkit-animation: cloud_to_right 45s linear;
+  -moz-animation: cloud_to_right 45s linear;
   z-index: 250;
   opacity: .6;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .cloud.nine {
   top: 65%;
   left: 85%;
   animation: cloud_to_left 45s linear;
+  -webkit-animation: cloud_to_left 45s linear;
+  -moz-animation: cloud_to_left 45s linear;
   z-index: 200;
   opacity: .7;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 
 @-webkit-keyframes explosion {
